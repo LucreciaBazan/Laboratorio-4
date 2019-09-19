@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+        <title>Guia 2 - UTN</title>
+        <link rel="stylesheet" type="text/css" href="baseStyle.css">
+    </head>
+
+    <body>
+
+        <form action="action.php" method="post">
+            <h1>Contact Form</h1>
+
+            <!-- Primer bloque -->
+
+            <legend><span class="number">1</span>Your basic info</legend>
+            
+            <label for="name">Name </label>
+            <input type="text" id="name" name="userName" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="userEmail" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="userPassword" required>
+
+            <label for="bithday">Bithday</label>
+            <input type="date" id="bithday" name="userBithday" required>
+
+            <label>Sex:</label>
+            <input type="radio" id="male" name="userSex" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="userSex" value="female">
+            <label for="female">Female</label>
+
+            <!-- Segundo bloque -->
+
+            <legend><span class="number">2</span>Your profile</legend>
+           
+            <label for="userInformation">About you</label>
+            <textarea id="userInformation" name="userInformation"></textarea>
+
+            <label for="role">Role</label>
+            <select name="role" placeholder="Front-End Developer">
+                <optgroup label="Web">
+                    <option value="frontend_developer">Front-End Developer</option>
+                    <option value="backend_developer">Back-End Developer</option>
+                    <option value="python_developer">Python Developer</option>
+                    <option value="qa_automation">QA Automation</option>
+                    <option value="web_designer">Web Designer</option>
+                    <option value="php_developer">PHP Developer</option>
+                </optgroup>
+                <optgroup label="Mobile">
+                    <option value="Android_developer">Androild Developer</option>
+                    <option value="iOS_developer">iOS Developer</option>
+                    <option value="mobile_designer">Mobile Designer</option>
+                </optgroup>
+            </select>
+
+            <label for="Interests">Interests</label>
+
+            <input type="checkbox" value="DataBase" name="DataBase">
+            <label for="Data Base"></label>
+
+            <input type="checkbox" value="Desing" name="Desing">
+            <label for="Desing">Desing</label>
+
+            <input type="checkbox" value="Business" name="Business">
+            <label for="Business">Business</label>
+
+            <input type="checkbox" value="Unit Test" name="Unit Test">
+            <label for="Unit Test">Unit Test</label>
+
+            <input type="checkbox" value="Cloud Development" name="Cloud Development">
+            <label for="Cloud Development">Cloud Development</label>
+
+            <input type="checkbox" value="Web Development" name="Web Development">
+            <label for="Web Development">Web Development</label>
+
+            <button type="submit">Send</button>
+            <button type="reset">Reset</button>
+
+
+        </form>
+
+    </body>
+
+</html>
